@@ -41,8 +41,7 @@ Assim, Amazon EFS é uma solução eficaz para a empresa farmacêutica Abstergo 
 ## Conclusão
 A implementação destas ferramentas na empresa Abstergo tem como esperado redução de custos pois elimina a necessidade de uma infraestrutura física reduzindo assim os custos de manutenção, eficiência operacional permitindo que a empresa responda rapidamente as mudanças nas demandas e aumente a eficiência no gerenciamento de dados, além de garantir segurança e conformidade garantindo protençaõ de dados sensíveis. Estes e outros fatores garantirão o aumento na eficiência e produtividade da empresa. Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
 
-## Anexos
 
-Assinatura do Responsável pelo Projeto:
+## Assinatura do Responsável pelo Projeto:
 
 Leonardo Dallepiane Ceretta
