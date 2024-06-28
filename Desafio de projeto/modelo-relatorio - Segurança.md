@@ -1,8 +1,8 @@
 # RELATÓRIO DE IMPLEMENTAÇÃO DE MEDIDAS DE SEGURANÇA
 
-Data: 28/06/2024
-Empresa: Abstergo Industries 
-Responsável: Leonardo Dallepiane Ceretta
+- Data: 28/06/2024
+- Empresa: Abstergo Industries 
+- Responsável: Leonardo Dallepiane Ceretta
 
 ## Introdução
 Este relatório apresenta o processo de implementação de ferramentas na empresa Abstergo Industries, realizado por Leonardo Dallepiane Ceretta. O objetivo do projeto foi elencar 3 medidas de segurança em conjunto dos serviços da AWS, com a finalidade de realizar aumentar a segurança na empresa.
@@ -57,10 +57,28 @@ Como resultado, a empresa consegue manter a disponibilidade do seu site mesmo du
 ## Medida 3: 
 - Amazon GuardDuty
 
+O Amazon GuardDuty é um serviço de detecção de ameaças que monitora continuamente suas contas da AWS, redes e cargas de trabalho em busca de atividades maliciosas ou comportamentos anômalos. Ele utiliza machine learning, análise de comportamento e fontes de inteligência de ameaças para identificar possíveis riscos. Podemos destacar os principais deles como:
+1. Detecção avançada de ameaças:
+    - O GuardDuty utiliza algoritmos avançados de machine learning para analisar o tráfego de rede e os logs de eventos, identificando atividades suspeitas ou anômalas que podem indicar uma ameaça;
+    - Também consegue se integrar com fontes de inteligência de ameaças da AWS e outras bases de dados de segurança, para identificar e correlacionar indicadores de comprometimento em tempo real.
+2. Monitoramento contínuo e automatizado:
+    - O GuardDuty monitora continuamente suas contas, redes e recurnos, em uma escala 24/7, garantindo que você seja notificado de atividades suspeitas a qualquer hora do dia;
+    - Também pode ser configurado para responder automaticamente a ameaças detectadas, por exemplo, é capaz de isolar uma instância comprometida ou bloquear um endereço IP malicioso.
+3. Relatórios e análises detalhadas:
+    - O Amazon GuardDuty gera relatórios detalhados sobre as ameaças detectadas, incluindo a origem, o tipo de ameaça e a recomendação de mitigação;
+    - Além disso, as ferramentas de visualização disponíveis no GuardDuty, ajudam a entender melhor os padrões de ameaças e a tomar decisões informadas sobre a segurança da infraestrutura em questão.
+4. Integração com outros serviços AWS:
+     - O GuardDuty se integra facilmente ao AWS Scurity Hub e fornece uma visão centralizada das ameaças ajudando assim na gestão da segurança em toda a organização;
+     - Analisa automaticamente os logs do AWS CloudTrail e os registros de fluxo da VPC para identificar atividades suspeitas.
 
+Como um exemplo de caso de uso, a Abstergo Industries utiliza várias contas da AWS para diferentes projetos e serviços. Em uma dessas contas, um desenvolvedor acidentalmente expôs suas credenciais de acesso ao repositório de código público, criando um risco de segurança potencial, pois atacantes podem tentar usar suas credenciais para acessar os recursos da empresa na AWS.
+
+A solução para esse problema inicia-se com a ativação do Amazon GuardDuty em todas as contas da AWS da empresa, para garantir o monitoramento contínuo e a detecção de ameaças. O GuardDuty então analisa os logs do AWS CloudTrail e os registros de fluxo da VPC para detectar atividades suspeitas, como tentativas de login não atorizados e alterações de políticas de segurança ou acessos a dados sensíveis. Após o processo de análise, o GuardDuty detecta uma série de tentativas de login usando as credenciais expostas, isso aciona um alerta de atividade suspeita, indicando um possível comprometimento da conta. Por fim, o GuardDuty envia uma notificação detalhada à equipe de segurança da empresa, incluindo informações sobre a origem do acesso, a localização geográfica e as ações realizadas. A empresa decide então isolar a conta comprometida e revogar as credenciais expostas.
+
+Como resultado, a empresa detecta rapidamente o acesso não autorizado e toma medidas eficazes para mitigar o risco, evitando possíveis danos maiores, como a exposição de dados sensíveis ou interrupções nos serviços. A utilização contínua do Amazon GuardDuty proporciona uma camada adicional de segurança proativa, ajudando a proteger os recursos da empresa contra futuras ameaças.
 
 ## Conclusão
-A implementação de ferramentas na empresa *[nome da empresa] tem como esperado [benefícios das ferramentas]*, o que aumentará a eficiência e a produtividade da empresa. Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
+A implementação destas ferramentas na empresa Abstergo Industries tem como esperado uma postura de segurança robusta e abrangente para a infraestrutura e operações da empresa na AWS. O que aumentará a eficiência e a produtividade da empresa. Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
 
 
 ## Assinatura do Responsável pelo Projeto:
